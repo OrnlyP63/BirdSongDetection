@@ -1,0 +1,11 @@
+https://www.kaggle.com/monogenea/birdsongs-from-europe
+
+#การใช้ ไฟล์ jupyter notebook
+#ข้อมูลเดิม เป็น mp3 ต้องเปลี่ยน เป็น wav ก่อน และ save ใน floder ชื่อ sound
+
+#การใช้ Dash_div.py
+ต้องรัน jupyter ก่อนหน้านี้เพื่อแปลง เสียงเป็นรูป ก่อน
+
+#การใช้ Dash_model.py 
+ตรวจสอบว่ามี ไฟล์ my_model_weights.h5 หรือไม่
+อัพโหลดเสียงนก ลงไปได้เลยไม่ต้องโหลด Data เพิ่ม
