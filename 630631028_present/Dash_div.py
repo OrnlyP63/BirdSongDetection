@@ -1,14 +1,14 @@
-import dash  
-import dash_core_components as dcc 
-import dash_html_components as html  
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
 from dash.dependencies import Input, Output, State
-import pandas as pd 
+import pandas as pd
 import base64
 
 
 def encode_img(image_file):
   encode = base64.b64encode(open(image_file,'rb').read())
-  return f'data:image/png;base64,{encode.decode()}'
+  return f'data:image/png;base64,{encode.decode()}' #data:[<mediatype>][;base64],<data>
 
 def encode_audio(sound_filename):
   encoded_sound = base64.b64encode(open(sound_filename, 'rb').read())
@@ -45,7 +45,7 @@ app.layout = html.Div(children=[
   ],
     style={"width": "30%"},
   ),
-  
+
 
   html.Div([
     html.Label('Short Time Fourier Transform'),
